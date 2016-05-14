@@ -29,7 +29,7 @@ public class DesviaouPegaCubo implements Behavior {
     }
 		
     public void action() {
-	garra.rotate(-50);
++	garra.rotate(-50);
 	pilot.setTravelSpeed(10);		
 	pilot.travel(15);
 	// Identifica cubo
