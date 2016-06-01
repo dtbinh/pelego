@@ -8,12 +8,8 @@ public class Main {
 	public static void main (String args[]){
 		Behavior vaiLinha = new VaiParaLinha();
 		Behavior desviaCubo = new DesviaouPegaCubo();
-		/*Behavior procuraCubo = new ProcuraCubo();
-		Behavior desviaCubo = new DesviaouPegaCubo();
 		Behavior fazGol = new FazGol();
-		Behavior Landmarks = new Landmarks();
-		Behavior DeadReckoning = new DeadReckoning();*/
-		Behavior[] behaviorList	= { vaiLinha, desviaCubo, /* fazGol, Landmarks, DeadReckoning*/ }; 
+		Behavior[] behaviorList	= { fazGol, desviaCubo, vaiLinha}; 
 		Arbitrator arby	= new Arbitrator(behaviorList); 
 		arby.start(); 
 	}
